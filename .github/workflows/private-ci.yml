@@ -17,4 +17,20 @@ jobs:
         ls
         git remote -v
 
+  build2:
+    runs-on: ubuntu-22.04
+
+    steps:
+    # Checkout main repo
+    - name: Checkout main repository
+      uses: actions/checkout@v4
+
+    - name: script
+      run: |
+        git rev-parse HEAD
+        ls
+        git remote -v
+        find .
+
+
 
